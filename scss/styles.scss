@@ -1,0 +1,162 @@
+@import "variables";
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.grid-2-small{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    &__menu{
+        background-color: transparent;
+        line-height: 3;
+    }
+    &__icon{
+        color: $color-icon-alt;
+        margin-left: .5em;
+        font-size: 1.2em;
+    }
+    &__icon-right{
+        color: $color-icon-alt;
+        margin-right: .5em;
+        text-align: right;
+        font-size: 1.2em;
+    }
+}
+.menu-top{
+    position: fixed;
+    top: 1.5em;
+    z-index: 10;
+    padding: 0.5em;
+    right: -11em;
+    width: 50%;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0,.4);
+    text-align: left;
+    &__item{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        line-height: 2;
+    }
+    &__link{
+        text-decoration: none;
+        font-family: $font;
+        font-size: .9em;
+        color: $color-text;
+    }
+}
+.scroll{
+    width: 100%;
+    padding-top: 5em;
+    padding-bottom: 8em;
+    background: linear-gradient($color2, #000000 50%);
+    &__img-conten{
+        width: 100%;
+    }
+    &__conten{
+        text-align: center;
+    }
+    &__img{
+        width: 200px;
+        display: block;
+        height: 200px;
+        margin: auto;
+    }
+    &__title{
+        color: $color-text;
+        font-family: $font;
+        font-size: 1.4em;
+    }
+    &__description{
+        color: $color-text;
+        font-family: $font;
+        font-size: .8em;
+        line-height: 2;
+    }
+    &__button{
+        background-color: $colorgreen;
+        text-decoration: none;
+        color: $color-text;
+        text-transform: uppercase;
+        padding: .8em 1.2em;
+        border-radius: 50px;
+        font-family:$font;
+        letter-spacing: 0.1em;
+    }
+}
+.music{
+    margin-top: 2em;
+    box-sizing: border-box;
+    padding: 0.5em;
+    font-family: $font;
+    &__title{
+        color: $color-text;
+        font-size: 1.1em;
+        font-weight: 100;
+        margin: 0;
+    }
+    &__artista{
+        color: $color-text-alt;
+        font-size: .8em;
+        font-weight: 100;
+        margin: 0;
+    }
+    &__icon{
+        color: $color-icon;
+        font-size: 1.3em;
+        line-height: 2;
+    }
+}
+.grid-3{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    background-color: $dark;
+    border-bottom: 2px solid #131313;
+}
+.fixed{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.name{
+    color: $color-text;
+    font-size: .9em;
+    line-height: 2;
+    text-align: center;
+    font-family: $font;
+    &__artista{
+        color: $color-text-alt;
+        font-size: .7em;
+    }
+}
+.main-nav{
+    background-color: $dark;
+    padding: 1em 0.5em;
+}
+.menu{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    &__item{
+        flex: auto;
+        text-align: center;
+    }
+    &__icon{
+        display: block;
+        padding-bottom: .2em;
+    }
+    &__link{
+        color: $color-text-alt;
+        display: block;
+        text-decoration: none;
+        font-family: $font;
+        font-weight: 100;
+    }
+}
